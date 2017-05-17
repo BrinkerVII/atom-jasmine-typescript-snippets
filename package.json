@@ -1,0 +1,19 @@
+{
+	"name": "atom-jasmine-typescript-snippets",
+	"version": "0.0.1",
+	"description": "Atom snippets for writing jasmine specs really fast",
+	"engines": {
+		"atom": "*",
+		"node": "*"
+	},
+	"homepage": {
+		"url": "https://github.com/BrinkerVII/atom-jasmine-typescript-snippets/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/BrinkerVII/atom-jasmine-typescript-snippets.git"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/BrinkerVII/atom-jasmine-typescript-snippets/issues"
+	}
