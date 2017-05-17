@@ -1,0 +1,51 @@
+'.source.ts':
+	'Jasmine describe block':
+		'prefix': 'describe-'
+		'body': """
+		        describe('${1:Description}', () => {
+		        	$2
+		        });
+		        """
+
+	'Jasmine before statement for components':
+		'prefix': 'before-component'
+		'body': """
+		        let component: ${1:Component};
+		        let fixture: ComponentFixture<${1:Component}>;
+		        let debugElement: DebugElement;
+		        let element: HTMLElement;
+
+		        beforeEach(() => {
+		        	TestBed.configureTestingModule({
+		        		declarations: [${1:Component}],
+		        		${2:imports: [],}
+		        		${3:providers: []}
+		        	})
+		        		.compileComponents();
+
+		        	fixture = TestBed.createComponent(${1:Component});
+		        	fixture.detectChanges();
+
+		        	component = fixture.componentInstance;
+		        	debugElement = fixture.debugElement.query(By.css("${4:css-selector}"));
+		        	element = debugElement.nativeElement;
+		        });
+
+		        $5
+		        """
+
+	'Jasmine/angular it-async block':
+		'prefix': 'it-async'
+		'body': """
+		        it('${1:should do something interesting}', async(() => {
+		        	${2:fixture.detectChanges();}$3
+		        }));
+		        """
+
+	'Jasmine it-block':
+		'prefix': 'it-'
+		'body': """
+		        it('${1:should do something interesting}', () => {
+		        	$2
+		        });
+		        """
