@@ -76,3 +76,18 @@
 		        	$2
 		        });
 		        """
+
+	'Jasmine beforeEach block':
+		'prefix': 'beforee-'
+		'body': """
+		beforeEach(() => {
+
+		});
+		"""
+	'Jasmine beforeAll block':
+		'prefix': 'beforea-'
+		'body': """
+		beforeAll(() => {
+
+		});
+		"""
