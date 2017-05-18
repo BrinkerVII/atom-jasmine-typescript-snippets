@@ -1,8 +1,19 @@
 '.source.ts':
 	'Jasmine element by css':
 		'prefix': 'by-css'
-		'body': """let ${2:element} = element(by.css("$1"));$3"""
+		'body': """let ${2:el} = element(by.css("$1"));$3"""
 
 	'Jasmine element by id':
 		'prefix': 'by-id'
-		'body': """let ${2:element} = element(by.id("$1"));$3"""
+		'body': """let ${2:el} = element(by.id("$1"));$3"""
+
+	'Protractor perform click':
+		'prefix': 'browser-click'
+		'body': """
+		browser.actions()
+			.mouseMove(${1:htmlelement}, { x: ${2:10}, y: ${3:10} })
+			.click()
+			.perform();
+
+		$4
+		"""
