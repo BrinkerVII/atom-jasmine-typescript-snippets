@@ -1,0 +1,8 @@
+'.source.ts':
+	'Import classes required by tests':
+		'prefix': 'import-for-spec'
+		'body': """
+		import { ComponentFixture, TestBed, async } from '@angular/core/testing';
+		import { DebugElement, Provider } from '@angular/core';
+		import { By } from '@angular/platform-browser';
+		"""
