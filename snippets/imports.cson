@@ -9,4 +9,4 @@
 
 	'Import protractor typings':
 		'prefix': 'import-for-protractor'
-		'body': """import { browser, by, element, Key, ElementFinder } from "protractor";"""
+		'body': """import { browser, by, element } from "protractor";"""
