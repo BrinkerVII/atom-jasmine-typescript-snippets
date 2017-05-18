@@ -42,7 +42,7 @@
 		        let debugElement: DebugElement;
 		        let element: HTMLElement;
 
-		        beforeEach(async()() => {
+		        beforeEach(async(() => {
 		        	TestBed.configureTestingModule({
 		        		declarations: [${1:Component}],
 		        		${2:imports: [],}
