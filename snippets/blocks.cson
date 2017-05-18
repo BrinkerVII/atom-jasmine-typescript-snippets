@@ -81,13 +81,13 @@
 		'prefix': 'beforee-'
 		'body': """
 		beforeEach(() => {
-
+			$1
 		});
 		"""
 	'Jasmine beforeAll block':
 		'prefix': 'beforea-'
 		'body': """
 		beforeAll(() => {
-
+			$1
 		});
 		"""
