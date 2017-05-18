@@ -17,3 +17,14 @@
 
 		$4
 		"""
+
+	'Protractor perform double click':
+		'prefix': 'browser-dclick'
+		'body': """
+		browser.actions()
+			.mouseMove(${1:htmlelement}, { x: ${2:10}, y: ${3:10} })
+			.doubleClick()
+			.perform();
+
+		$4
+		"""
