@@ -1,0 +1,8 @@
+'.source.ts':
+	'Jasmine element by css':
+		'prefix': 'by-css'
+		'body': """let ${2:element} = element(by.css("$1"));$3"""
+
+	'Jasmine element by id':
+		'prefix': 'by-css'
+		'body': """let ${2:element} = element(by.id("$1"));$3"""
