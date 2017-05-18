@@ -6,3 +6,7 @@
 		import { DebugElement, Provider } from '@angular/core';
 		import { By } from '@angular/platform-browser';
 		"""
+
+	'Import protractor typings':
+		'prefix': 'import-for-protractor'
+		'body': """import { browser, by, element, Key, ElementFinder } from "protractor";"""
