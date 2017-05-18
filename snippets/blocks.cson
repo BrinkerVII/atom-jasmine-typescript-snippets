@@ -34,6 +34,33 @@
 		        $5
 		        """
 
+	'Jasmine async before statement for components':
+		'prefix': 'before-component-async'
+		'body': """
+		        let component: ${1:Component};
+		        let fixture: ComponentFixture<${1:Component}>;
+		        let debugElement: DebugElement;
+		        let element: HTMLElement;
+
+		        beforeEach(async()() => {
+		        	TestBed.configureTestingModule({
+		        		declarations: [${1:Component}],
+		        		${2:imports: [],}
+		        		${3:providers: []}
+		        	})
+		        		.compileComponents();
+
+		        	fixture = TestBed.createComponent(${1:Component});
+		        	fixture.detectChanges();
+
+		        	component = fixture.componentInstance;
+		        	debugElement = fixture.debugElement.query(By.css("${4:css-selector}"));
+		        	element = debugElement.nativeElement;
+		        }));
+
+		        $5
+		        """
+
 	'Jasmine/angular it-async block':
 		'prefix': 'it-async'
 		'body': """
